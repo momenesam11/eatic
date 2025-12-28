@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@200..1000&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+       font-family: "Cairo", sans-serif;
+
+  line-height: 1.5;
+  font-weight: 400;
+direction: rtl;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+
+.w-3{
+     width: 32%;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+     font-size: large;
+     font-weight: 500;
+}
+img.logo {
+    width: 100px;
+}
+
+
+header.hero{
+     background-image: url('./assets/bg_hero.png');
+     background-repeat: no-repeat;
+     background-clip: border-box;
+     background-position: right center;
+     background-size: contain;
+     margin: 100px 0px;
+}
+
+
+
+div.box{
+     width:38%;
+}
+div.box-number{
+     width:32%;
+}
+
+
+div.left{
+         width: 45%;
+}
+
+
+header.hero div.left div.d-flex button{
+  padding: 10px 25px;
+
+}
+
+button:hover{
+      transform: scale(1.05);
+      transition: all 0.4s linear;
+      background-color: #709E1B !important;
+      border: none !important;
+}
+
+
+.accordion-button::after{
+     content: '';
+     display: none;
+}
+
+
+.accordion-header{
+     
+     border: 2px solid #eff0f1;
+     border-radius: 3px !important;
+}
+.accordion-item{
+     border:none !important
+}
+
+.accordion-header button:hover{
+     transform:scale(1); ;
+      box-shadow: 0 0px 10px #365067;
+      transition: all 0.3s linear;
+      background-color: #709E1B !important;
+      border-radius: 4px;
+      border: 3px !important;
+      color: white;
+}
+
+.accordion-item :not(.collapsed){
+     background-color: #0D3B2D !important;
+     color: white !important;
+     border-radius: 4px 4px 0px 0px !important;
+     
+}
+
+.accordion-body{
+     background-image: url('./assets/brand.svg');
+     background-repeat: no-repeat;
+     background-position: center left;
+    
+}
+
+
+.mobile-iamge{
+     display: none;
+}
+ .featrues div.box{
+     width:75%;
+}
+
+.delivery{
+     background-image: url('./assets/bg_delivery.svg');
+     
+
+}
+
+.manger{
+     background-image: url('./assets/bg_manger.svg');
+     
+}
+
+.manger,.delivery{
+     background-size: cover;
+     background-repeat: no-repeat;
+     width: 30%;
+}
+
+.hover-apps:hover {
+     transform: scale(1.05);
+     transition: all .3s linear;
+     
+}
+
+.logoClint{
+     width:7%;
+}
+
+
+footer{
+     background-image: url('./assets/brand.svg');
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: contain;
+     
+}
+
+
+.lala{
+
+}
+@media screen and (max-width: 768px) {
+     div.box{
+          width:80%;
+     }
+     div.box-number{
+          width:80%;
+     }
+     div.left{
+          width: 100%;
+          text-align: center;
+     }
+
+     .mobile-iamge{
+          display: block;
+          width: 60% !important;
+     }
+     div.numbers div.box{
+     width: 80%;
+     }
+
+     div.content div.box{
+          display: none;
+     }
+
+    
+}
+
+
+@media screen and (max-width: 992px){
+         .w-3{
+     width: 100%;
+}
+ .delivery,.manger{
+          width: 90% !important;
+     }
+}
