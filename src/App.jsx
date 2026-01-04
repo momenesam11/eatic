@@ -12,11 +12,11 @@ export default function App() {
   var routers=createBrowserRouter([
       {path:'/',element:<Layout/>,children:
         [
-        {path:'/eatic/home', element:<Home/>},
-        {path:'/eatic/about', element:<About/>},
-        {path:'/eatic/price', element:<Price/>},
-        {path:'/eatic/blogs', element:<Blogs/>},
-        {path:'/eatic/blogs/blogs-details', element:<BlogsDetails/> },
+        {path:'/home', element:<Home/>},
+        {path:'/about', element:<About/>},
+        {path:'/price', element:<Price/>},
+        {path:'/blogs', element:<Blogs/>},
+        {path:'/blogs/blogs-details', element:<BlogsDetails/> },
         {path:'*', element:<h1>Erorr 404 not found
         </h1>},
       ]}
@@ -24,7 +24,7 @@ export default function App() {
 
 
   return <>
-     <RouterProvider router={routers}></RouterProvider>
+     <RouterProvider router={routers} basename="/eatic"></RouterProvider>
    
     </>
   
