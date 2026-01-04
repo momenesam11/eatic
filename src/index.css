@@ -153,9 +153,50 @@ footer{
 }
 
 
-.lala{
 
+
+
+/*price page style*/
+
+header.hero-price{
+     
+     margin: 120px 0px !important;
 }
+
+
+
+.nav-pills .nav-link.active{
+     border-radius: 55px !important;
+     padding-inline: 30px;
+}
+
+div.pri{
+     
+    height: 90% !important;
+}
+
+div.most-saller {
+  position: relative;
+  z-index: 1;
+    height: 100% !important;
+}
+
+.most-saller::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('assets/brand.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  opacity: 0.25;
+  z-index: -1;
+  pointer-events: none;
+}
+/*price page style*/
+
+
+
 @media screen and (max-width: 768px) {
      div.box{
           width:80%;
@@ -180,6 +221,19 @@ footer{
           display: none;
      }
 
+
+
+     div.most-saller{
+          width: 80%;
+     }
+
+     div.most-saller{
+          width: 80%;
+          margin-top: 30px;
+     }
+     div.pri{
+          width: 80% !important;
+     }
     
 }
 

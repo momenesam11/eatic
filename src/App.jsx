@@ -6,6 +6,7 @@ import Home from './pages/Home/Home';
 import About from './pages/about/About';
 import Price from './pages/pricing/Pricing';
 import Blogs from './pages/blogs/Blogs';
+import BlogsDetails from './pages/blogs/BlogsDetails';
 export default function App() {
 
   var routers=createBrowserRouter([
@@ -15,6 +16,7 @@ export default function App() {
         {path:'/about', element:<About/>},
         {path:'/price', element:<Price/>},
         {path:'/blogs', element:<Blogs/>},
+        {path:'/blogs/blogs-details', element:<BlogsDetails/> },
         {path:'*', element:<h1>Erorr 404 not found
         </h1>},
       ]}
