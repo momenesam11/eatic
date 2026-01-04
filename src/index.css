@@ -12,6 +12,13 @@ direction: rtl;
 }
 
 
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+     color: #709E1B !important;
+     font-weight: 700 !important;   
+}
+
+
 .w-3{
      width: 32%;
 }

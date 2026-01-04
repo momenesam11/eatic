@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../assets/logo.png'
+import { NavLink } from 'react-router-dom'
 export default function Navbar() {
   return <>
   
@@ -12,19 +13,19 @@ export default function Navbar() {
     <div className="collapse navbar-collapse align-content-center" id="navbarSupportedContent">
       <ul className="navbar-nav mx-auto mb-2 mb-lg-0 align-items-center gap-3">
         <li className="nav-item">
-          <a className="nav-link text-secondary fw-bolder  active" aria-current="page" href="#">الرئيسية</a>
+          <NavLink className="nav-link fw-semibold  " aria-current="page" to="/home">الرئيسية</NavLink>
         </li>
         <li className="nav-item ">
-          <a className="nav-link  fw-semibold" href="#">الأسعار</a>
+          <NavLink className="nav-link  fw-semibold" to="/price">الأسعار</NavLink>
         </li>
         <li className="nav-item">
-          <a className="nav-link fw-semibold" href="#">المدونة</a>
+          <NavLink className="nav-link fw-semibold" to="/blogs">المدونة</NavLink>
         </li>
         <li className="nav-item">
-          <a className="nav-link fw-semibold" href="#">ماذا عنا </a>
+          <NavLink className="nav-link fw-semibold" to="/about">ماذا عنا </NavLink>
         </li>
         <li className="nav-item">
-          <a className="nav-link fw-semibold" href="#">المساعدة</a>
+          <NavLink className="nav-link fw-semibold" to="/">المساعدة</NavLink>
         </li>
       </ul>
       <div className="d-flex gap-2 ms-md-5">
