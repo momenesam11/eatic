@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from './layout/Layout'
 import './custom-bootstrap.scss';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Home from './pages/Home/Home';
+import Home from './pages/home/Home';
 import About from './pages/about/About';
 import Price from './pages/pricing/Pricing';
 import Blogs from './pages/blogs/Blogs';
