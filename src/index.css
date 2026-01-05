@@ -32,9 +32,9 @@ img.logo {
 }
 
 
-header.hero{
+div#root{
      background-image: url('./assets/bg_hero.png');
-     background-repeat: no-repeat;
+     background-repeat: repeat-y;
      background-clip: border-box;
      background-position: right center;
      background-size: contain;
@@ -192,6 +192,69 @@ div.most-saller {
   opacity: 0.25;
   z-index: -1;
   pointer-events: none;
+}
+
+
+input::placeholder {
+  text-align: right;
+}
+
+.form-select {
+     direction: rtl !important;
+    background-position: left 0.75rem center !important;
+    padding-left: 1rem !important;
+    padding-right: 0.75rem !important;
+}
+
+
+.custom-number-input {
+  position: relative;
+  direction: rtl;
+}
+
+.custom-number-input input {
+  padding-left: 40px; /* مساحة الأسهم */
+  height: 44px;
+}
+
+/* إخفاء الأسهم الافتراضية */
+.custom-number-input input::-webkit-inner-spin-button,
+.custom-number-input input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.custom-number-input input {
+  -moz-appearance: textfield;
+}
+
+/* الأسهم */
+.custom-number-input .arrows {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.custom-number-input .arrows button {
+  background: none;
+  border: none;
+  padding: 0;
+  line-height: 1;
+  font-size: 12px;
+  cursor: pointer;
+  color: #333;
+}
+
+.custom-number-input .arrows button:hover {
+  color: #000;
+}
+
+
+input.rname {
+         padding-left: 0px;
 }
 /*price page style*/
 

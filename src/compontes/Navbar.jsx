@@ -13,7 +13,7 @@ export default function Navbar() {
     <div className="collapse navbar-collapse align-content-center" id="navbarSupportedContent">
       <ul className="navbar-nav mx-auto mb-2 mb-lg-0 align-items-center gap-3">
         <li className="nav-item">
-          <NavLink className="nav-link fw-semibold  " aria-current="page" to="/home">الرئيسية</NavLink>
+          <NavLink className="nav-link fw-semibold  " aria-current="page" to="/">الرئيسية</NavLink>
         </li>
         <li className="nav-item ">
           <NavLink className="nav-link  fw-semibold" to="/price">الأسعار</NavLink>
@@ -25,7 +25,7 @@ export default function Navbar() {
           <NavLink className="nav-link fw-semibold" to="/about">ماذا عنا </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link fw-semibold" to="/">المساعدة</NavLink>
+          <NavLink className="nav-link fw-semibold" to="/help">المساعدة</NavLink>
         </li>
       </ul>
       <div className="d-flex gap-2 ms-md-5">

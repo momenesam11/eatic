@@ -3,6 +3,7 @@ import Header from "../../compontes/HeaderPrice";
 import sa from "../../assets/lucide_saudi-riyal.svg";
 import sa_white from "../../assets/lucide_saudi-riyal-white.svg";
 import mark from "../../assets/openmoji_check-mark.svg";
+import { Link } from "react-router-dom";
 
 export default function Pricing() {
   return (
@@ -45,9 +46,9 @@ export default function Pricing() {
                 <li className="mb-2 fs-5 ">دعم فني عبر الإيميل</li>
               </div>
             </ul>
-            <button className="btn btn-primary mt-auto py-3 fw-semibold ">
+            <Link className="btn btn-primary mt-auto py-3 fw-semibold " to="/price/plan">
               اشتري الان
-            </button>
+            </Link>
           </div>
 
           <div className="most-saller shadow-lg col-md-4 col-12  price-card  position-relative ps-4 pe-4 pb-3 pt-5 rounded-4 text-center text-white d-flex flex-column gap-2 justify-content-start  border border-1 bg-primary  ">
